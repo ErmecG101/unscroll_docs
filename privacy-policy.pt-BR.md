@@ -1,6 +1,6 @@
 # Política de Privacidade do UnScroll
 
-**Data de vigência:** 30 de setembro de 2026
+**Data de vigência:** 23 de outubro de 2026
 
 Esta Política de Privacidade explica como o **UnScroll** (pacote `com.otvmrnslv.unscroll`, "o Aplicativo") trata as informações. O Aplicativo é desenvolvido por **Almost Done Studios** ("nós").
 
@@ -11,7 +11,7 @@ O UnScroll ajuda você a limitar o tempo gasto nos aplicativos que você escolhe
 ## 1. Resumo
 
 - O UnScroll usa o **Serviço de Acessibilidade** e o **Acesso ao uso** do Android apenas para detectar quando um aplicativo que você selecionou (ou o feed do YouTube Shorts) está aberto em primeiro plano, para aplicar os limites de tempo que você definiu.
-- O UnScroll **não** lê, grava nem transmite suas mensagens, textos digitados, senhas, histórico de navegação ou o conteúdo da sua tela.
+- O UnScroll **não** grava nem transmite suas mensagens, textos digitados, senhas, histórico de navegação ou o conteúdo da sua tela. Os únicos detalhes da tela que ele verifica estão listados na Seção 2 e nunca saem do seu dispositivo.
 - Suas configurações e seu histórico de bloqueios ficam armazenados **somente no seu dispositivo**.
 - O Aplicativo usa o **Google Firebase** (Analytics, Crashlytics e Performance Monitoring) para coletar dados limitados e pseudonimizados de uso, falhas e desempenho, para que possamos melhorar a estabilidade.
 - **Não** vendemos seus dados nem os usamos para publicidade.
@@ -22,7 +22,7 @@ O UnScroll ajuda você a limitar o tempo gasto nos aplicativos que você escolhe
 
 | Permissão | Por que o UnScroll precisa dela |
 |---|---|
-| **Serviço de Acessibilidade** | Para detectar qual aplicativo está em primeiro plano e, no YouTube, se a aba "Shorts" é a que está selecionada. O Aplicativo só inspeciona a interface na tela para encontrar esse indicador de aba. Ele não lê nem armazena nenhum outro conteúdo da tela, e pode executar a ação "Início" para fechar um aplicativo monitorado quando você escolhe *Fechar app*. |
+| **Serviço de Acessibilidade** | Para detectar qual aplicativo está em primeiro plano e, no YouTube, se a aba "Shorts" é a que está selecionada. O Aplicativo só inspeciona a interface na tela para encontrar esse indicador de aba. Ele também percebe quando você rola a tela em um aplicativo monitorado, para que o bloqueio possa esperar você passar para o próximo vídeo, e fecha a janela flutuante de vídeo (picture-in-picture) de um aplicativo bloqueado. Ele não lê nem armazena nenhum outro conteúdo da tela, e pode executar a ação "Início" para fechar um aplicativo monitorado quando você escolhe *Fechar app*. |
 | **Acesso ao uso** (`PACKAGE_USAGE_STATS`) | Para listar os aplicativos instalados no seu dispositivo, para que você escolha quais deseja monitorar. |
 | **Sobrepor a outros apps** (`SYSTEM_ALERT_WINDOW`) | Para exibir a tela de bloqueio sobre um aplicativo monitorado quando seu limite de tempo é atingido. |
 | **Notificações** (`POST_NOTIFICATIONS`) | Para mostrar a notificação do cronômetro, avisar se o serviço de monitoramento foi interrompido e enviar um resumo diário do seu progresso. |

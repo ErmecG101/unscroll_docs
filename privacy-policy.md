@@ -1,6 +1,6 @@
 # UnScroll Privacy Policy
 
-**Effective date:** September 30, 2026
+**Effective date:** October 23, 2026
 
 This Privacy Policy explains how **UnScroll** (package `com.otvmrnslv.unscroll`, "the App") handles information. The App is developed by **Almost Done Studios** ("we", "us").
 
@@ -11,7 +11,7 @@ UnScroll helps you limit time spent in apps you choose. It is designed to work a
 ## 1. Summary
 
 - UnScroll uses Android's **Accessibility Service** and **Usage Access** only to detect when an app you selected (or the YouTube Shorts feed) is open in the foreground, so it can enforce the time limits you set.
-- UnScroll **does not** read, record, or transmit your messages, text input, passwords, browsing history, or screen contents.
+- UnScroll **does not** record or transmit your messages, text input, passwords, browsing history, or screen contents. The only on-screen details it checks are listed in Section 2, and they never leave your device.
 - Your settings and block history are stored **only on your device**.
 - The App uses **Google Firebase** (Analytics, Crashlytics, Performance Monitoring) to collect limited, pseudonymous usage, crash, and performance data so we can improve stability.
 - We do **not** sell your data or use it for advertising.
@@ -22,7 +22,7 @@ UnScroll helps you limit time spent in apps you choose. It is designed to work a
 
 | Permission | Why UnScroll needs it |
 |---|---|
-| **Accessibility Service** | To detect which app is currently in the foreground and, for YouTube, whether the "Shorts" tab is the one selected. The App only inspects the on-screen interface to find that tab indicator. It does not read or store any other screen content, and it can perform a "Home" action to close a monitored app when you choose *Close app*. |
+| **Accessibility Service** | To detect which app is currently in the foreground and, for YouTube, whether the "Shorts" tab is the one selected. The App only inspects the on-screen interface to find that tab indicator. It also notices when you scroll in a monitored app, so that a block can wait until you move on to the next video, and it closes a blocked app's floating video (picture-in-picture) window. It does not read or store any other screen content, and it can perform a "Home" action to close a monitored app when you choose *Close app*. |
 | **Usage Access** (`PACKAGE_USAGE_STATS`) | To list the apps installed on your device so you can choose which ones to monitor. |
 | **Display over other apps** (`SYSTEM_ALERT_WINDOW`) | To show the blocker screen on top of a monitored app when your time limit is reached. |
 | **Notifications** (`POST_NOTIFICATIONS`) | To show the countdown timer notification, alert you if the monitoring service stopped, and send a daily progress summary. |
